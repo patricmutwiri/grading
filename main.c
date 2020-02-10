@@ -9,6 +9,18 @@ int main()
         total = total+subject[i];
     }
     average = total/i;
-    printf("Total is %f and average is %f \n",total,average);
-    return 0;
+
+    if(average>=70) {
+        grade = 'A';
+    } else if (average >= 60) {
+        grade = 'B';
+    } else if (average >= 50) {
+        grade = 'C';
+    } else if (average >= 40) {
+        grade = 'D';
+    } else {
+        grade = 'F';
+    }
+
+    printf("Total is %f Average is %f and grade is %c \n",total,average,grade);
 }
